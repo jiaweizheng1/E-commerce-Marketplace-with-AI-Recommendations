@@ -15,23 +15,28 @@ function Header() {
 
     {/* Deliver to Address */}
     <div className="header__nav">
+          <img 
+            className="header__locationIcon" 
+            src="/location-dot.svg" 
+            alt="Location Dot" 
+          />
         <div className="header__option">
             <span className="header__optionLineOne">Delivering to Sacramento 95822</span>
-            <span className="header__optionLineTwo">Update Location</span>
+            <span className="header__optionLineTwo">Update location</span>
         </div>
     </div>
 
       {/* Search Bar */}
       <div className="header__search">
-        <input className="header__searchInput" type="text" />
+        <input className="header__searchInput" type="text" placeholder="Search Amazon"/>
         <SearchIcon className="header__searchIcon" />
       </div>
 
       {/* Navigation Options */}
       <div className="header__nav">
         <div className="header__option">
-          <span className="header__optionLineOne">Hello Guest</span>
-          <span className="header__optionLineTwo">Sign In</span>
+          <span className="header__optionLineOne">Hello Guest,</span>
+          <span className="header__optionLineTwo">Sign in</span>
         </div>
 
         <div className="header__option">
