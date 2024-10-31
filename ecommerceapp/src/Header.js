@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function Header() {
   return (
@@ -13,22 +13,28 @@ function Header() {
         alt="Amazon Logo"
       />
 
-    {/* Deliver to Address */}
-    <div className="header__nav">
-          <img 
-            className="header__locationIcon" 
-            src="/location-dot.svg" 
-            alt="Location Dot" 
-          />
+      {/* Deliver to Address */}
+      <div className="header__nav">
+        <img
+          className="header__locationIcon"
+          src="/location-dot.svg"
+          alt="Location Dot"
+        />
         <div className="header__option">
-            <span className="header__optionLineOne">Delivering to Sacramento 95822</span>
-            <span className="header__optionLineTwo">Update location</span>
+          <span className="header__optionLineOne">
+            Delivering to Sacramento 95822
+          </span>
+          <span className="header__optionLineTwo">Update location</span>
         </div>
-    </div>
+      </div>
 
       {/* Search Bar */}
       <div className="header__search">
-        <input className="header__searchInput" type="text" placeholder="Search Amazon"/>
+        <input
+          className="header__searchInput"
+          type="text"
+          placeholder="Search Amazon"
+        />
         <SearchIcon className="header__searchIcon" />
       </div>
 
@@ -46,12 +52,12 @@ function Header() {
 
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Prime</span>
+          <span className="header__optionLineTwo">Cart</span>
         </div>
 
         {/* Shopping Basket */}
         <div className="header__optionBasket">
-          <ShoppingBasketIcon />
+          <ShoppingCartIcon />
           <span className="header__optionLineTwo header__basketCount">0</span>
         </div>
       </div>
